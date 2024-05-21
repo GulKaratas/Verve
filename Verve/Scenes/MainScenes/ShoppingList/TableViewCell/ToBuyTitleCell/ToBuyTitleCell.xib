@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ToBuyTitleCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToBuyTitleCell" rowHeight="92" id="KGk-i7-Jjw" customClass="ToBuyTitleCell" customModule="TittoAppetito" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="344" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6oH-bt-BRq">
+                        <rect key="frame" x="0.0" y="18" width="344" height="56"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ToBuyTitleImage" translatesAutoresizingMaskIntoConstraints="NO" id="vua-Xq-kkF">
+                                <rect key="frame" x="4" y="17" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="LrQ-d7-7p7"/>
+                                    <constraint firstAttribute="width" constant="22" id="lu1-su-Nrd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Buy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNk-tL-DjM">
+                                <rect key="frame" x="34" y="0.0" width="295" height="56"/>
+                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="16"/>
+                                <color key="textColor" red="0.1176470588" green="0.12941176469999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.96862745098039216" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XNk-tL-DjM" firstAttribute="top" secondItem="6oH-bt-BRq" secondAttribute="top" id="5Rc-q2-dVd"/>
+                            <constraint firstItem="XNk-tL-DjM" firstAttribute="leading" secondItem="vua-Xq-kkF" secondAttribute="trailing" constant="8" id="9s1-CD-Cur"/>
+                            <constraint firstItem="vua-Xq-kkF" firstAttribute="centerY" secondItem="6oH-bt-BRq" secondAttribute="centerY" id="JhH-nt-LJV"/>
+                            <constraint firstItem="vua-Xq-kkF" firstAttribute="leading" secondItem="6oH-bt-BRq" secondAttribute="leading" constant="4" id="UPf-O4-y8I"/>
+                            <constraint firstAttribute="trailing" secondItem="XNk-tL-DjM" secondAttribute="trailing" constant="15" id="Y50-ma-MpR"/>
+                            <constraint firstAttribute="bottom" secondItem="XNk-tL-DjM" secondAttribute="bottom" id="eWR-z1-hPm"/>
+                            <constraint firstItem="XNk-tL-DjM" firstAttribute="centerY" secondItem="6oH-bt-BRq" secondAttribute="centerY" id="vbj-wk-wD1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.98039215686274506" green="0.96862745098039216" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="6oH-bt-BRq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="4Fm-RM-ARj"/>
+                    <constraint firstItem="6oH-bt-BRq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QMx-0m-dLL"/>
+                    <constraint firstAttribute="bottom" secondItem="6oH-bt-BRq" secondAttribute="bottom" constant="18" id="fya-ld-Iu6"/>
+                    <constraint firstAttribute="trailing" secondItem="6oH-bt-BRq" secondAttribute="trailing" id="tl1-yf-Hml"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="155.07246376811597" y="169.41964285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ToBuyTitleImage" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ozm-c5-Jo3">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Bold.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="lH1-53-hgO">
+            <objects>
+                <tabBarController id="Ozm-c5-Jo3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aOC-dJ-B95"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="cSW-s5-5xd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="unselectedItemTintColor">
+                                <color key="value" white="0.66666666666666663" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xhl-bG-MUA" kind="relationship" relationship="viewControllers" id="dzT-UW-s3g"/>
+                        <segue destination="WUU-DN-feB" kind="relationship" relationship="viewControllers" id="8Ix-II-I8c"/>
+                        <segue destination="N0f-tc-7sl" kind="relationship" relationship="viewControllers" id="xQn-p0-Dsr"/>
+                        <segue destination="RgY-Nh-13h" kind="relationship" relationship="viewControllers" id="M2t-sX-I8Z"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yQy-MK-zOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="673.84615384615381" y="-100.23696682464454"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mxz-R1-x8c">
+            <objects>
+                <navigationController id="xhl-bG-MUA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="home-icon" id="BTd-V9-96c">
+                        <inset key="imageInsets" minX="0.0" minY="32" maxX="0.0" maxY="32"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Be-HD-Gyc">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WaO-Nq-8CR" kind="relationship" relationship="rootViewController" id="R7g-7y-zyt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z1a-5c-7WW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-825" y="805"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="viC-aM-nme">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="WaO-Nq-8CR" customClass="HomeViewController" customModule="TittoAppetito" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vrt-hX-Bk5">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="han-jY-URU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="70A-g5-d4E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4KD-GT-V16" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-825" y="1574"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N4K-w7-UWu">
+            <objects>
+                <navigationController id="WUU-DN-feB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="fridge-icon" id="cAT-A2-Vsw">
+                        <inset key="imageInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="I5s-fq-BEe">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hjS-bB-dha" kind="relationship" relationship="rootViewController" id="469-dw-QML"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfQ-EE-5tW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125" y="805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CxO-SI-Deb">
+            <objects>
+                <navigationController id="RgY-Nh-13h" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="shopping-cart-icon" id="e0w-vA-dV1">
+                        <inset key="imageInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jWy-cJ-9di">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="36i-36-M4R" kind="relationship" relationship="rootViewController" id="l27-AL-mgb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yS4-Ft-Y04" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2172" y="805"/>
+        </scene>
+        <!--Fridge View Controller-->
+        <scene sceneID="pKW-ci-ZED">
+            <objects>
+                <viewController storyboardIdentifier="FridgeViewController" id="hjS-bB-dha" customClass="FridgeViewController" customModule="TittoAppetito" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gwL-Ti-V5I">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OmA-LE-23G"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="atg-VY-omW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wH-VY-LcF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125" y="1574"/>
+        </scene>
+        <!--Recipe Details View Controller-->
+        <scene sceneID="00n-pE-GZt">
+            <objects>
+                <viewController storyboardIdentifier="RecipeDetailsViewController" id="UXe-Wi-4uO" customClass="RecipeDetailsViewController" customModule="TittoAppetito" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wE5-bu-WpN">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cty-Pi-a8d">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="aQR-2x-t4W"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VH3-i9-nTa">
+                                <rect key="frame" x="10" y="335" width="370" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="usedIngs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzb-Us-61b">
+                                <rect key="frame" x="10" y="379" width="370" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zNv-Hc-TQo">
+                                <rect key="frame" x="10" y="408" width="370" height="137"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="cP2-MD-wDq"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2UI-mX-YUJ">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="missedIngs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIe-Oa-qja">
+                                <rect key="frame" x="10" y="565" width="370" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LHu-yv-hWb">
+                                <rect key="frame" x="10" y="596" width="370" height="137"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="137" id="JmH-1v-pah"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pnc-l9-vTx">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H0D-6J-ZWn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cty-Pi-a8d" firstAttribute="top" secondItem="wE5-bu-WpN" secondAttribute="top" id="0re-wu-fRR"/>
+                            <constraint firstItem="H0D-6J-ZWn" firstAttribute="trailing" secondItem="VH3-i9-nTa" secondAttribute="trailing" constant="10" id="2LV-l0-AaK"/>
+                            <constraint firstItem="ZIe-Oa-qja" firstAttribute="leading" secondItem="H0D-6J-ZWn" secondAttribute="leading" constant="10" id="4lI-es-Nok"/>
+                            <constraint firstItem="VH3-i9-nTa" firstAttribute="leading" secondItem="H0D-6J-ZWn" secondAttribute="leading" constant="10" id="5n2-bP-iFW"/>
+                            <constraint firstItem="VH3-i9-nTa" firstAttribute="leading" secondItem="H0D-6J-ZWn" secondAttribute="leading" constant="10" id="6FP-ZO-S2L"/>
+                            <constraint firstItem="cty-Pi-a8d" firstAttribute="leading" secondItem="wE5-bu-WpN" secondAttribute="leading" id="AMn-JP-Ub3"/>
+                            <constraint firstItem="H0D-6J-ZWn" firstAttribute="trailing" secondItem="zNv-Hc-TQo" secondAttribute="trailing" constant="10" id="Cq3-1m-8IW"/>
+                            <constraint firstItem="ZIe-Oa-qja" firstAttribute="top" secondItem="zNv-Hc-TQo" secondAttribute="bottom" constant="20" id="D6g-2k-XSw"/>
+                            <constraint firstItem="H0D-6J-ZWn" firstAttribute="trailing" secondItem="Wzb-Us-61b" secondAttribute="trailing" constant="10" id="Ggq-eH-gEa"/>
+                            <constraint firstItem="H0D-6J-ZWn" firstAttribute="trailing" secondItem="LHu-yv-hWb" secondAttribute="trailing" constant="10" id="JcL-PI-ant"/>
+                            <constraint firstItem="LHu-yv-hWb" firstAttribute="leading" secondItem="H0D-6J-ZWn" secondAttribute="leading" constant="10" id="MXQ-al-IOW"/>
+                            <constraint firstItem="H0D-6J-ZWn" firstAttribute="trailing" secondItem="VH3-i9-nTa" secondAttribute="trailing" constant="10" id="MgJ-x3-YFT"/>
+                            <constraint firstAttribute="trailing" secondItem="cty-Pi-a8d" secondAttribute="trailing" id="P77-ta-49T"/>
+                            <constraint firstItem="VH3-i9-nTa" firstAttribute="top" secondItem="cty-Pi-a8d" secondAttribute="bottom" constant="15" id="ebL-zy-CVG"/>
+                            <constraint firstItem="LHu-yv-hWb" firstAttribute="top" secondItem="ZIe-Oa-qja" secondAttribute="bottom" constant="10" id="hay-Xm-XX1"/>
+                            <constraint firstItem="H0D-6J-ZWn" firstAttribute="trailing" secondItem="ZIe-Oa-qja" secondAttribute="trailing" constant="10" id="naG-hJ-UmW"/>
+                            <constraint firstItem="Wzb-Us-61b" firstAttribute="leading" secondItem="H0D-6J-ZWn" secondAttribute="leading" constant="10" id="rAu-tZ-0Jl"/>
+                            <constraint firstItem="zNv-Hc-TQo" firstAttribute="top" secondItem="Wzb-Us-61b" secondAttribute="bottom" constant="8" symbolic="YES" id="srj-es-RBU"/>
+                            <constraint firstItem="Wzb-Us-61b" firstAttribute="top" secondItem="VH3-i9-nTa" secondAttribute="bottom" constant="20" id="tRF-Pa-e1N"/>
+                            <constraint firstItem="zNv-Hc-TQo" firstAttribute="leading" secondItem="H0D-6J-ZWn" secondAttribute="leading" constant="10" id="zz8-YE-R95"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionViewForMissed" destination="LHu-yv-hWb" id="aMv-Ot-VLf"/>
+                        <outlet property="collectionViewForUsed" destination="zNv-Hc-TQo" id="76n-j8-dYi"/>
+                        <outlet property="missedIngLbl" destination="ZIe-Oa-qja" id="Crj-NX-ybt"/>
+                        <outlet property="recipeImage" destination="cty-Pi-a8d" id="24J-Ns-pNv"/>
+                        <outlet property="recipeTitle" destination="VH3-i9-nTa" id="3bW-DZ-psj"/>
+                        <outlet property="usedIngLbl" destination="Wzb-Us-61b" id="MY1-fP-AOG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vE7-pT-WxE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="177" y="2373"/>
+        </scene>
+        <!--Recipes View Controller-->
+        <scene sceneID="h6H-Zt-2bn">
+            <objects>
+                <viewController storyboardIdentifier="RecipesViewController" id="A9G-a1-UQL" customClass="RecipesViewController" customModule="TittoAppetito" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="edS-zE-Zq1">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="htO-3U-rrR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xm5-U5-b0W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-657" y="2373"/>
+        </scene>
+        <!--Shopping List View Controller-->
+        <scene sceneID="S69-hd-S5e">
+            <objects>
+                <viewController storyboardIdentifier="ShoppingListViewController" id="36i-36-M4R" customClass="ShoppingListViewController" customModule="TittoAppetito" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yrl-id-eNC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crH-3D-1Fn" userLabel="Top View">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="135"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I1d-W5-xgF">
+                                        <rect key="frame" x="30" y="72" width="330" height="43"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUW-GE-BEd">
+                                                <rect key="frame" x="225" y="0.0" width="105" height="43"/>
+                                                <color key="backgroundColor" red="0.1176470588" green="0.12941176469999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="105" id="wAN-Zb-anB">
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenWidthToFitDevice" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </constraint>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                                <state key="normal" title="Product" image="plusButton">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustFontSizeToFitDevice" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="addProductTapped:" destination="36i-36-M4R" eventType="touchUpInside" id="RF4-ts-wbF"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 May, 2024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vau-kC-rrD">
+                                                <rect key="frame" x="0.0" y="8" width="210" height="27"/>
+                                                <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="24"/>
+                                                <color key="textColor" red="0.1176470588" green="0.12941176469999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustFontSizeToFitDevice" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="eUW-GE-BEd" secondAttribute="trailing" id="BGt-2s-PhP">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenWidthToFitDevice" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstItem="eUW-GE-BEd" firstAttribute="leading" secondItem="vau-kC-rrD" secondAttribute="trailing" constant="15" id="Qww-CW-Qpq"/>
+                                            <constraint firstAttribute="bottom" secondItem="eUW-GE-BEd" secondAttribute="bottom" id="SYa-MQ-mp6">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenWidthToFitDevice" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstItem="vau-kC-rrD" firstAttribute="centerY" secondItem="I1d-W5-xgF" secondAttribute="centerY" id="bwP-PD-GGa"/>
+                                            <constraint firstItem="vau-kC-rrD" firstAttribute="leading" secondItem="I1d-W5-xgF" secondAttribute="leading" id="eD3-ET-XCC"/>
+                                            <constraint firstAttribute="height" constant="43" id="n9z-d1-SMw">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenWidthToFitDevice" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstItem="eUW-GE-BEd" firstAttribute="top" secondItem="I1d-W5-xgF" secondAttribute="top" id="qSJ-ro-zcv">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenWidthToFitDevice" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="I1d-W5-xgF" firstAttribute="leading" secondItem="crH-3D-1Fn" secondAttribute="leading" constant="30" id="8oM-1a-LYH">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="I1d-W5-xgF" secondAttribute="bottom" constant="20" id="jZd-1E-D2p"/>
+                                    <constraint firstAttribute="trailing" secondItem="I1d-W5-xgF" secondAttribute="trailing" constant="30" id="kcI-pp-DKZ">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstItem="I1d-W5-xgF" firstAttribute="top" secondItem="crH-3D-1Fn" secondAttribute="top" constant="72" id="nJI-sd-vVu">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="woq-oC-IDF" userLabel="Default View">
+                                <rect key="frame" x="0.0" y="135" width="390" height="626"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="totoro" translatesAutoresizingMaskIntoConstraints="NO" id="VUv-Jp-cFa">
+                                        <rect key="frame" x="79.666666666666686" y="106" width="231" height="166"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="166" id="HJS-sa-OSH">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="231" id="Y3y-2E-KSg">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpw-lg-G9m">
+                                        <rect key="frame" x="114" y="410" width="162" height="55"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="162" id="W4c-BJ-rGg">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenWidthToFitDevice" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="55" id="txt-oN-rlU">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenWidthToFitDevice" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                                        <state key="normal" title="Add Products" image="plusButton">
+                                            <color key="titleColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="adjustCornerRadiusToFitDevice" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustFontSizeToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="VUv-Jp-cFa" firstAttribute="centerX" secondItem="woq-oC-IDF" secondAttribute="centerX" id="13q-nu-uWc">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="Qpw-lg-G9m" secondAttribute="bottom" constant="161" id="9On-zf-fgF"/>
+                                    <constraint firstItem="Qpw-lg-G9m" firstAttribute="centerX" secondItem="woq-oC-IDF" secondAttribute="centerX" id="T6H-TB-fCn">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstItem="VUv-Jp-cFa" firstAttribute="top" secondItem="woq-oC-IDF" secondAttribute="top" constant="106" id="gSw-kB-YNY">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtD-xN-UfH" userLabel="TableView Holder View">
+                                <rect key="frame" x="0.0" y="135" width="390" height="626"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="54v-4l-LGW">
+                                        <rect key="frame" x="26" y="8" width="340" height="618"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.96862745098039216" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="54v-4l-LGW" firstAttribute="leading" secondItem="EtD-xN-UfH" secondAttribute="leading" constant="26" id="2L5-L5-dVV">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="54v-4l-LGW" secondAttribute="bottom" id="3SU-WP-gzO">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="54v-4l-LGW" secondAttribute="trailing" constant="24" id="A9U-ti-Khn">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstItem="54v-4l-LGW" firstAttribute="top" secondItem="EtD-xN-UfH" secondAttribute="top" constant="8" id="bK4-w3-1VP">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RgR-zl-6HL"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.95686274510000002" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="woq-oC-IDF" firstAttribute="leading" secondItem="RgR-zl-6HL" secondAttribute="leading" id="1li-15-l6O">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="crH-3D-1Fn" firstAttribute="leading" secondItem="RgR-zl-6HL" secondAttribute="leading" id="6h2-Cm-H2L">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="crH-3D-1Fn" firstAttribute="top" secondItem="yrl-id-eNC" secondAttribute="top" id="73b-Sf-CAM">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="RgR-zl-6HL" firstAttribute="bottom" secondItem="woq-oC-IDF" secondAttribute="bottom" id="Mhs-T3-qP1">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="EtD-xN-UfH" firstAttribute="leading" secondItem="RgR-zl-6HL" secondAttribute="leading" id="NKf-i2-DZ6">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="EtD-xN-UfH" secondAttribute="bottom" id="TbP-c0-3Oe"/>
+                            <constraint firstItem="RgR-zl-6HL" firstAttribute="trailing" secondItem="woq-oC-IDF" secondAttribute="trailing" id="XB8-5D-DIe">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="EtD-xN-UfH" firstAttribute="top" secondItem="crH-3D-1Fn" secondAttribute="bottom" id="ef3-bF-aRm">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="woq-oC-IDF" firstAttribute="top" secondItem="crH-3D-1Fn" secondAttribute="bottom" id="hPL-ei-oaI">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="RgR-zl-6HL" firstAttribute="trailing" secondItem="crH-3D-1Fn" secondAttribute="trailing" id="hbS-je-LAd">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                            <constraint firstItem="RgR-zl-6HL" firstAttribute="trailing" secondItem="EtD-xN-UfH" secondAttribute="trailing" id="igF-ia-fzN">
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenHeightToFitDevice" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XFt-KL-ALK"/>
+                    <connections>
+                        <outlet property="tableView" destination="54v-4l-LGW" id="XVf-Md-Jfl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hoy-Bx-UuU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2172" y="1574"/>
+        </scene>
+        <!--New Product Controller-->
+        <scene sceneID="PVD-fI-7sE">
+            <objects>
+                <viewController storyboardIdentifier="NewProductController" id="MtU-Bu-mY4" customClass="NewProductController" customModule="TittoAppetito" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rBg-E1-UTI">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebT-zn-YAO" userLabel="Back Button View">
+                                <rect key="frame" x="30" y="78" width="226" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dsb-9d-L7R" userLabel="BtnGetStarted">
+                                        <rect key="frame" x="20" y="0.0" width="116" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="116" id="ZrV-aa-oNk">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenWidthToFitDevice" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="16"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="28" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <state key="normal" title="Back to list">
+                                            <color key="titleColor" red="0.1176470588" green="0.12941176469999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustFontSizeToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftArrow" translatesAutoresizingMaskIntoConstraints="NO" id="SoA-5M-0zr">
+                                        <rect key="frame" x="0.0" y="5.6666666666666714" width="12" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="12" id="8k2-Hd-TSz">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenWidthToFitDevice" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="19" id="Xxt-Xv-LIj">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenWidthToFitDevice" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjH-A6-Q7h">
+                                        <rect key="frame" x="0.0" y="-5" width="226" height="40"/>
+                                        <connections>
+                                            <action selector="btnBackClicked:" destination="MtU-Bu-mY4" eventType="touchUpInside" id="qyV-jk-LlG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Dsb-9d-L7R" firstAttribute="centerY" secondItem="ebT-zn-YAO" secondAttribute="centerY" id="5No-uL-RV9"/>
+                                    <constraint firstItem="SoA-5M-0zr" firstAttribute="centerY" secondItem="ebT-zn-YAO" secondAttribute="centerY" id="8wH-GW-ZsW"/>
+                                    <constraint firstItem="SoA-5M-0zr" firstAttribute="leading" secondItem="ebT-zn-YAO" secondAttribute="leading" id="G0j-gF-cR2"/>
+                                    <constraint firstAttribute="width" constant="226" id="Pva-5H-FoH">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenWidthToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="KjH-A6-Q7h" secondAttribute="bottom" constant="-5" id="UIW-4S-LKn"/>
+                                    <constraint firstItem="KjH-A6-Q7h" firstAttribute="top" secondItem="ebT-zn-YAO" secondAttribute="top" constant="-5" id="WNx-9Z-ekP"/>
+                                    <constraint firstItem="KjH-A6-Q7h" firstAttribute="leading" secondItem="ebT-zn-YAO" secondAttribute="leading" id="Xh7-XO-fgI"/>
+                                    <constraint firstAttribute="trailing" secondItem="KjH-A6-Q7h" secondAttribute="trailing" id="aAq-h1-g9J"/>
+                                    <constraint firstItem="Dsb-9d-L7R" firstAttribute="leading" secondItem="SoA-5M-0zr" secondAttribute="trailing" constant="8" id="bGi-09-Fdc"/>
+                                    <constraint firstAttribute="height" constant="30" id="lS7-aW-9hC">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenWidthToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocI-2c-tjK" userLabel="New Product View">
+                                <rect key="frame" x="30" y="162" width="330" height="608"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Things to buy?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXx-or-8Gj">
+                                        <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="18"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="16"/>
+                                        <color key="textColor" red="0.1215686275" green="0.14117647059999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustFontSizeToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mga-dj-obW">
+                                        <rect key="frame" x="-3" y="38" width="333" height="570"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.1176470588" green="0.12941176469999999" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustFontSizeToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="JXx-or-8Gj" firstAttribute="leading" secondItem="ocI-2c-tjK" secondAttribute="leading" id="4Ni-Ru-PGj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mga-dj-obW" secondAttribute="trailing" id="Y8A-3I-guI"/>
+                                    <constraint firstItem="Mga-dj-obW" firstAttribute="top" secondItem="JXx-or-8Gj" secondAttribute="bottom" constant="20" id="a2b-9t-Rt6"/>
+                                    <constraint firstItem="JXx-or-8Gj" firstAttribute="top" secondItem="ocI-2c-tjK" secondAttribute="top" id="eLC-D9-18b"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mga-dj-obW" secondAttribute="bottom" id="eiA-7t-tTk"/>
+                                    <constraint firstItem="Mga-dj-obW" firstAttribute="leading" secondItem="ocI-2c-tjK" secondAttribute="leading" constant="-3" id="jp2-TX-qGX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRi-ia-dZs">
+                                <rect key="frame" x="30" y="790" width="330" height="54"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xz5-id-Za6">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="54"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <state key="normal" title="Delete" image="BinIcon">
+                                            <color key="titleColor" red="0.51473933459999999" green="0.5232446194" blue="0.54675328729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustFontSizeToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnDeleteClicked:" destination="MtU-Bu-mY4" eventType="touchUpInside" id="Be8-Zb-AWl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQ0-lc-qD0">
+                                        <rect key="frame" x="168" y="0.0" width="162" height="54"/>
+                                        <color key="backgroundColor" red="0.1215686275" green="0.14117647059999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="162" id="f1T-dm-qX9">
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenWidthToFitDevice" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustFontSizeToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnSaveClicked:" destination="MtU-Bu-mY4" eventType="touchUpInside" id="TI5-nk-3Db"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xz5-id-Za6" secondAttribute="bottom" id="BAb-wP-Krp"/>
+                                    <constraint firstAttribute="bottom" secondItem="tQ0-lc-qD0" secondAttribute="bottom" id="Tl4-mk-Clm"/>
+                                    <constraint firstItem="xz5-id-Za6" firstAttribute="top" secondItem="kRi-ia-dZs" secondAttribute="top" id="Zog-Np-chJ"/>
+                                    <constraint firstItem="tQ0-lc-qD0" firstAttribute="leading" secondItem="xz5-id-Za6" secondAttribute="trailing" constant="15" id="b5r-a8-0bc">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenWidthToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="tQ0-lc-qD0" secondAttribute="trailing" id="d61-Ob-z2C"/>
+                                    <constraint firstItem="tQ0-lc-qD0" firstAttribute="top" secondItem="kRi-ia-dZs" secondAttribute="top" id="hf5-cB-ujN"/>
+                                    <constraint firstItem="xz5-id-Za6" firstAttribute="leading" secondItem="kRi-ia-dZs" secondAttribute="leading" id="raN-3P-Ugf"/>
+                                    <constraint firstAttribute="height" constant="54" id="wcJ-8l-8Hc">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldAdjustConstantWithScreenWidthToFitDevice" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WBf-Tt-F1I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WBf-Tt-F1I" firstAttribute="trailing" secondItem="kRi-ia-dZs" secondAttribute="trailing" constant="30" id="9ym-Mo-8jr"/>
+                            <constraint firstItem="ocI-2c-tjK" firstAttribute="top" secondItem="ebT-zn-YAO" secondAttribute="bottom" constant="54" id="OxF-nl-S4H"/>
+                            <constraint firstItem="ebT-zn-YAO" firstAttribute="top" secondItem="WBf-Tt-F1I" secondAttribute="top" constant="31" id="Ygd-VH-kTZ"/>
+                            <constraint firstItem="kRi-ia-dZs" firstAttribute="leading" secondItem="WBf-Tt-F1I" secondAttribute="leading" constant="30" id="cgh-zf-YL9"/>
+                            <constraint firstItem="ebT-zn-YAO" firstAttribute="leading" secondItem="WBf-Tt-F1I" secondAttribute="leading" constant="30" id="dJm-bb-hTU"/>
+                            <constraint firstAttribute="bottom" secondItem="kRi-ia-dZs" secondAttribute="bottom" id="fIe-Wo-nVv"/>
+                            <constraint firstItem="ocI-2c-tjK" firstAttribute="leading" secondItem="ebT-zn-YAO" secondAttribute="leading" id="i6D-hE-rfU"/>
+                            <constraint firstItem="WBf-Tt-F1I" firstAttribute="trailing" secondItem="ocI-2c-tjK" secondAttribute="trailing" constant="30" id="lHa-aH-R10"/>
+                            <constraint firstItem="kRi-ia-dZs" firstAttribute="top" secondItem="ocI-2c-tjK" secondAttribute="bottom" constant="20" id="ojL-Gc-gZX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="footerViewBottomConstraint" destination="fIe-Wo-nVv" id="kU1-cg-szt"/>
+                        <outlet property="lblQuestionTitle" destination="JXx-or-8Gj" id="NP9-pW-wC3"/>
+                        <outlet property="txtViewToBuyDesc" destination="Mga-dj-obW" id="Rt3-bJ-k47"/>
+                        <outlet property="viewFooterActions" destination="kRi-ia-dZs" id="s28-0S-lSY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zPO-ia-tpI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3075" y="1574"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qsb-G3-sQr">
+            <objects>
+                <navigationController id="N0f-tc-7sl" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icons8-open-book-30" id="Hp5-Qw-YXT">
+                        <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U7p-xu-TnY">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iFo-tu-H6Y" kind="relationship" relationship="rootViewController" id="A8I-tU-z8p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OFS-as-7Xi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="805"/>
+        </scene>
+        <!--My Recipes View Controller-->
+        <scene sceneID="VDW-wW-Jkp">
+            <objects>
+                <viewController storyboardIdentifier="MyRecipesViewController" id="iFo-tu-H6Y" customClass="MyRecipesViewController" customModule="TittoAppetito" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Ne-7I-WgK">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Bfc-xF-W5c"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hhv-tX-1mg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xkQ-yr-ffF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="1574"/>
+        </scene>
+        <!--Add Edit My Recipe View Controller-->
+        <scene sceneID="iZ9-UG-WLZ">
+            <objects>
+                <viewController storyboardIdentifier="AddEditMyRecipeViewController" id="X9c-s3-uBt" customClass="AddEditMyRecipeViewController" customModule="TittoAppetito" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pM8-fD-qCy">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="QbR-ql-ev3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PQs-Fc-DOZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXj-lG-RxY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1151" y="2373"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BinIcon" width="13" height="16"/>
+        <image name="fridge-icon" width="48" height="48"/>
+        <image name="home-icon" width="96" height="96"/>
+        <image name="icons8-open-book-30" width="30" height="30"/>
+        <image name="leftArrow" width="27" height="42"/>
+        <image name="plusButton" width="11" height="11"/>
+        <image name="shopping-cart-icon" width="48" height="48"/>
+        <image name="totoro" width="800" height="478"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
