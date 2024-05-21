@@ -158,7 +158,7 @@ final class FridgeViewController: UIViewController {
         NSLayoutConstraint.activate([top, left, right, height])
     }
     
-    // MARK: - API functions
+    
     private func fetchData() {
         let url = APIurlsGenerator.urlForIngredientsByCategory()
         

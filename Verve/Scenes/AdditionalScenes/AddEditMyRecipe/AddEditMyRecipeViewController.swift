@@ -242,7 +242,7 @@ final class AddEditMyRecipeViewController: UIViewController {
         let alertController = UIAlertController(title: "Resim Seç", message: nil, preferredStyle: .actionSheet)
                    
         let cameraAction = UIAlertAction(title: "Fotoğraf Çek", style: .default) { _ in
-            // Kamera ile fotoğraf çekmeyi uygulayın
+           
         }
                    
         let photoLibraryAction = UIAlertAction(title: "Galeriden Seç", style: .default) { _ in

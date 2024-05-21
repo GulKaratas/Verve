@@ -99,11 +99,14 @@ extension RecipeDetailsViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DetailsIngredientCell.identifier, for: indexPath) as? DetailsIngredientCell else { return UICollectionViewCell()}
-        
+       
         
         if collectionView == self.collectionViewForUsed {
             let currentUsedIngredient = usedIngredients[indexPath.row]
             let imageUrlForUsed = currentUsedIngredient.image
+           
+            //UserDefaults
+            UserDefaults.standard.set(imageUrlForUsed, forKey: "imageUrlForUsed")
             
             cell.ingredientName.text = currentUsedIngredient.name.firstLetterUppercased()
             cell.ingredientImg.load(url: URL(string: imageUrlForUsed)!)

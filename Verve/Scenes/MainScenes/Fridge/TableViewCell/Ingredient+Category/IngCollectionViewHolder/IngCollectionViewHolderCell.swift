@@ -87,7 +87,7 @@ class IngCollectionViewHolderCell: UITableViewCell {
     
     
     private func addSeeRecipesButton() {
-        NotificationCenter.default.post(name: Notification.Name("TittoAppetito.Notification.addButton"), object: nil)
+        NotificationCenter.default.post(name: Notification.Name("Verve.Notification.addButton"), object: nil)
     }
 }
 

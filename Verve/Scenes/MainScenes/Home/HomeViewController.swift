@@ -21,6 +21,7 @@ final class HomeViewController: UIViewController {
         setUp()
         setUpTableView()
         fetchData()
+        
     }
     
 
